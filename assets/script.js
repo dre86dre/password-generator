@@ -116,6 +116,39 @@ function generatePassword() {
   
       var confirmLength = (prompt("How many characters would you like in this password?"));
       console.log('User has chose to have ' + confirmLength + ' characters generated in the password');
-    } 
+    }
+
+    // Code that determines parameters for the password
+    var confirmSpecialCharacter = confirm("Click OK if you would like special characters ($@%&*, etc.) in your password");
+    // Console.log the user's answer
+    if (confirmSpecialCharacter == true) {
+        console.log('User would like special characters in their password');
+    } else {
+        console.log('User would not like special characters in their password');
+    }
+
+    var confirmNumericCharacter = confirm("Click OK if you would like numeric characters in your password");
+    // Console.log the user's answer
+    if (confirmNumericCharacter == true) {
+        console.log('User would like numeric characters in their password');
+    } else {
+        console.log('User would not like numeric characters in their password');
+    }
+
+    var confirmLowerCase = confirm("Click OK if you would like lowercase characters in your password");
+    // Console.log the user's answer
+    if (confirmLowerCase == true) {
+        console.log('User would like lowercase characters in their password');
+    } else {
+        console.log('User would not like lowercase characters in their password');
+    }
+
+    var confirmUpperCase = confirm("Click OK if you would like uppercase characters in your password");
+    // Console.log the user's answer
+    if (confirmLowerCase == true) {
+        console.log('User would like uppercase characters in their password');
+    } else {
+        console.log('User would not like uppercase characters in their password');
+    }
 
 }
