@@ -151,4 +151,42 @@ function generatePassword() {
         console.log('User would not like uppercase characters in their password');
     }
 
+    // Code that shows loop if the answer is outside the parameters
+    while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
+    alert("You must choose at least one parameter");
+    console.log('User must choose at least one parameter');
+
+    var confirmSpecialCharacter = confirm("Click OK if you would like special characters ($@%&*, etc.) in your password");
+    // Console.log the user's answer
+    if (confirmSpecialCharacter == true) {
+      console.log('User would like special characters in their password');
+    } else {
+      console.log('User would not like special characters in their password');
+    }
+  
+    var confirmNumericCharacter = confirm("Click OK if you would like numeric characters in your password");
+    // Console.log the user's answer
+    if (confirmNumericCharacter == true) {
+      console.log('User would like numeric characters in their password');
+    } else {
+      console.log('User would not like numeric characters in their password');
+    }
+
+    var confirmLowerCase = confirm("Click OK if you would like lowercase characters in your password");
+    // Console.log the user's answer
+    if (confirmLowerCase == true) {
+      console.log('User would like lowercase characters in their password');
+    } else {
+      console.log('User would not like lowercase characters in their password');
+    }
+
+    var confirmUpperCase = confirm("Click OK if you would like uppercase characters in your password");
+    // Console.log the user's answer
+    if (confirmLowerCase == true) {
+      console.log('User would like uppercase characters in their password');
+    } else {
+      console.log('User would not like uppercase characters in their password');
+    }
+    } 
+
 }
