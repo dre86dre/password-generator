@@ -189,4 +189,48 @@ function generatePassword() {
     }
     } 
 
+    // This code below creates a variable from the answers and puts them together
+    var passwordCharacters = []
+        
+    if (confirmSpecialCharacter) {
+        passwordCharacters = passwordCharacters.concat(specialCharacters)
+    }
+
+    if (confirmNumericCharacter) {
+        passwordCharacters = passwordCharacters.concat(numericCharacters)
+    }
+            
+    if (confirmLowerCase) {
+        passwordCharacters = passwordCharacters.concat(lowerCasedCharacters)
+    }
+
+    if (confirmUpperCase) {
+        passwordCharacters = passwordCharacters.concat(upperCasedCharacters)
+    }
+
+    console.log(passwordCharacters)
+
+    // Code that shows an empty string that will be filled based on for loop selecting the random characters from the array
+    var randomPassword = ""
+            
+    for (var i = 0; i < confirmLength; i++) {
+        randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+        console.log(randomPassword)
+    }
+
+    return randomPassword;
 }
+
+// Get references to the #generate element
+var generateBtn = document.querySelector('#generate');
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector('#password');
+
+  passwordText.value = password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener('click', writePassword);
