@@ -20,4 +20,4 @@ The following animation demonstrates the application functionality:<br>
 
 
 ## License
-Licensed under the MIT license.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
