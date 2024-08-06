@@ -1,6 +1,6 @@
 <h1>Password Generator<h1/>
 
-<p>Welcome to the Password Generator project! This tool helps you create strong, random passwords based on criteria you specify. The criteria include password length, inclusion of uppercase letters, lowercase letters, numbers, and special characters.</p>
+Welcome to the Password Generator project! This tool helps you create strong, random passwords based on criteria you specify. The criteria include password length, inclusion of uppercase letters, lowercase letters, numbers, and special characters.
 
 ## Description
 
