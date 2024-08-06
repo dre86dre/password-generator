@@ -6,8 +6,8 @@
 
 - Generates a random password based on user-defined criteria.
 - Allows customization of password length.
-Options to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
-Simple and easy-to-use command-line interface.<br/>
+- Options to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
+- Simple and easy-to-use command-line interface.<br/>
 <br/>
 
 ## Mock-Up
