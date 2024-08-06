@@ -2,9 +2,12 @@
 
 <p>Welcome to the Password Generator project! This tool helps you create strong, random passwords based on criteria you specify. The criteria include password length, inclusion of uppercase letters, lowercase letters, numbers, and special characters.</p>
 
-## Description
+## Features
 
-This is a password generator. The password is generated once the user provide answers to the criteria prompted.<br/>
+--Generates a random password based on user-defined criteria.
+--Allows customization of password length.
+Options to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
+Simple and easy-to-use command-line interface.<br/>
 <br/>
 
 ## Mock-Up
